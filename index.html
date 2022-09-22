@@ -52,7 +52,7 @@ function randomQuote() {
     fetch("https://type.fit/api/quotes").then(res => res.json()).then(result => {
 console.log(result);
        
-        
+        console.log(result[randomNumber]["text"]+  result[randomNumber]["author"]);
         qouteText.innerText ='~'+
         result[randomNumber]["text"] ;
         authorName.innerText = 
